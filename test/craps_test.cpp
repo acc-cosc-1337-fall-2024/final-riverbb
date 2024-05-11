@@ -17,4 +17,20 @@ TEST_CASE("die rolls return a value from 1 to 6") {
   }
 }
 
+// QUESTION 2 ///////////////////////////////
+
+TEST_CASE("roll returns a value from 2 to 12") {
+  die die1;
+  die die2;
+  
+  roll roll(die1, die2);
+  
+  for (int i = 0; i < 10; i++) {
+    roll.roll_dice();
+    int result = roll.roll_value();
+    REQUIRE(result >= 2);
+    REQUIRE(result <= 12);
+  }
+}
+
 /////////////////////////////////////////////
