@@ -4,3 +4,17 @@
 TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
 }
+
+// QUESTION 1 ///////////////////////////////
+
+TEST_CASE("die rolls return a value from 1 to 6") {
+  die die;
+
+  for (int i = 0; i < 10; i++) {
+    int result = die.roll();
+    REQUIRE(result >= 1);
+    REQUIRE(result <= 6);
+  }
+}
+
+/////////////////////////////////////////////
