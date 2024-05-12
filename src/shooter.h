@@ -4,6 +4,7 @@
 #define SHOOTER_H
 
 #include "roll.h"
+#include "die.h"
 #include <vector>
 
 // QUESTION 3 ///////////////////////////////
@@ -13,12 +14,13 @@
 class shooter {
 
   public:
-    roll* throw_dice(die& die1, die& die2);
-    void display_rolled_values();
+    shooter();
+    Roll* throw_dice(die& die1, die& die2);
+    void display_Rolled_values();
     ~shooter();
 
   private:
-    std::vector<roll*> rolls;
+    std::vector<Roll*> Rolls;
 };
 
 /////////////////////////////////////////////
