@@ -4,15 +4,15 @@
 
 // QUESTION 4B //////////////////////////////
 
-rollOutcome come_out_phase::get_outcome(roll* roll) const {
-  int roll_value = roll->roll_value();
+RollOutcome come_out_phase::get_outcome(Roll* Roll) const {
+  int Roll_value = Roll->Roll_value();
 
-  if (roll_value == 7 || roll_value == 11) {
-    return rollOutcome::natural;
-  } else if (roll_value == 2 || roll_value == 3 || roll_value == 12) {
-    return rollOutcome::craps;
+  if (Roll_value == 7 || Roll_value == 11) {
+    return RollOutcome::natural;
+  } else if (Roll_value == 2 || Roll_value == 3 || Roll_value == 12) {
+    return RollOutcome::craps;
   } else {
-    return rollOutcome::point;
+    return RollOutcome::point;
   }
 }
 
