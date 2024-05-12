@@ -11,7 +11,7 @@
 class point_phase : public phase {
   public:
     point_phase(int p);
-    virtual rollOutcome get_outcome(roll* roll) const override;
+    virtual RollOutcome get_outcome(Roll* Roll) const override;
 
   private:
     int point;
