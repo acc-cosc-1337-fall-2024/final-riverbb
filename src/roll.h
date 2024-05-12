@@ -7,19 +7,19 @@
 
 // QUESTION 2 ///////////////////////////////
 
-//In files Roll.h and Roll.cpp, create a Roll class to simulate rolling dice (two die).
+//In files roll.h and roll.cpp, create a Roll class to simulate rolling dice (two die).
 
-class roll {
+class Roll {
 
   public:
-    roll(die& die1, die& die2);
-    void roll_dice();
-    int roll_value() const;
+    Roll(die& die1, die& die2);
+    void Roll_dice();
+    int Roll_value() const;
 
   private:
     die& die1;
     die& die2;
-    int rolled_value;
+    int Rolled_value;
 };
 
 /////////////////////////////////////////////
