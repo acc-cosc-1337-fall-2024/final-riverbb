@@ -11,7 +11,7 @@
 
 class come_out_phase : public phase {
   public:
-    rollOutcome get_outcome(roll *roll) const override;
+    RollOutcome get_outcome(Roll* Roll) const override;
 };
 
 /////////////////////////////////////////////
