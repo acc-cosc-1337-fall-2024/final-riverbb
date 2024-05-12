@@ -10,7 +10,7 @@
 
 // In file phase.h and phase.cpp, create an abstract Phase class that will be the base class for derived classes ComeOutPhase and PointPhase
 
-enum class rollOutcome {
+enum class RollOutcome {
   natural,
   craps,
   point,
@@ -21,7 +21,7 @@ enum class rollOutcome {
 class phase {
   public:
     virtual ~phase() {}
-    virtual rollOutcome get_outcome(roll* roll) const = 0;
+    virtual RollOutcome get_outcome(Roll* Roll) const = 0;
 };
 
 /////////////////////////////////////////////
